@@ -51,7 +51,10 @@ class lmdbDataset(Dataset):
             buf.write(imgbuf)
             buf.seek(0)
             try:
+                # 转成灰度值
                 img = Image.open(buf).convert('L')
+                # 不转灰度值
+#                 img = Image.open(buf)
                 # img.save("1111111111.jpg")
             except IOError:
                 print('Corrupted image for %d' % index)
