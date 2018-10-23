@@ -218,7 +218,6 @@ def predict_with_channels(im,basemodel):
 
     return out
 
-
 def decode(pred):
 #     charactersS = keys_keras.alphabet[:] + u' '
 #     charactersS = keys_union.alphabet[:] + u''
@@ -231,3 +230,5 @@ def decode(pred):
         if t[i] != n and (not (i > 0 and t[i - 1] == t[i])):
             char_list.append(charactersS[t[i]])
     return u''.join(char_list)
+
+

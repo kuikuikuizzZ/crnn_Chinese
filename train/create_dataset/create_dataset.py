@@ -89,9 +89,9 @@ import glob
 if __name__ == '__main__':
 
     ##lmdb 输出目录
-    outputPath = '../data/lmdb/train_competition_gen_25_v2'
+    outputPath = '../data/lmdb/valid_num_no_char_v2'
 
-    path = '../data/train_competition_gen_25_v2/*.png'
+    path = '../data/valid_num_no_char_v2/*.png'
     imagePathList = glob.glob(path)
     print('------------', len(imagePathList), '------------')
     imgLabelLists = []
