@@ -3,7 +3,7 @@
 ###
 import os,sys
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(parentdir)
+sys.path.insert(1,parentdir)
 # from PIL import Image
 import keras.backend as K
 sys.path.insert(1, '/mnt/wuwenhui/git_ocr_project/keras_crnn/train/keras-train/')
